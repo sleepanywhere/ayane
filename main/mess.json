@@ -1,0 +1,17 @@
+{
+    "wait" : "```Mohon Tunggu```",
+	"success" : "```Berhasil!```",
+	"wrongFormat" : "```Wrong Format, look back at the command list```",
+	"error" : {
+		    "stick" : "Hanya Stiker",
+			"Iv" : "Url Error",
+			"api" : "Api Error"
+	        },
+	"only" : {
+	"group" : "Hanya Di Grup",
+	"prem" : "Khusus PREMIUM\nIngin Premium?\nHubungi Owner",
+	"owner" : "Hanya Owner",
+	"admin" : "Hanya Admin Grup",
+	"adminTG" : "```ONLY ADMIN TARGET GC!```"
+                    }
+}

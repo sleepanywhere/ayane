@@ -1,0 +1,17 @@
+{
+    "ownerNumber": ["6289626692456@s.whatsapp.net"] ,
+    "ownerName": "Yuki",
+    "botName": "Ayane Shirakawa",
+    "apikey": "sinonkuyuki",
+    "targetpc" : "6289626692456",
+    "owner" : ["6289626692456","628527206500"],
+    "fake" : "*AYANE*",
+    "targetgc" : "6282250941238-1625047491@g.us",
+    "numbernye" : "0",
+    "gamewaktu" : "60",
+    "limitCount": 40,
+     "gcount": {
+        "prem": 50,
+        "user": 15
+    }
+}
