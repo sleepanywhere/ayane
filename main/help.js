@@ -58,10 +58,10 @@ exports.myinfo = (botName, saldo, pushname, isOwner, isPremium, sisalimit, limit
 │
 ├───「 *INFO📣* 」
 │
-├ Ingin Limit Tak Terbatas?
-├ Donasi Seiklasnya Untuk Mendapatkan
-├ Premium User Dengan Akses Fitur Khusus
-├ Hubungi Owner / Creator
+├ *Ingin Limit Tak Terbatas?*
+├ *Donasi Seiklasnya Untuk Mendapatkan*
+├ *Premium User Dengan Akses Fitur Khusus*
+├ *Hubungi Owner / Creator*
 │
 ╰───「 *${botName}* 」`
 }
