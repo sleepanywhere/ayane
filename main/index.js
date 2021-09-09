@@ -107,6 +107,8 @@ baterai = {
 }
 let tebakgambar = [];
 let family100 = [];
+
+moment.tz.setDefault("Asia/Jakarta").locale("id");
 //=================================================//
 module.exports = conn = async (conn, mek, baterai, blocked) => {
     try {
