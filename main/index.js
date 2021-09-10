@@ -199,8 +199,8 @@ module.exports = conn = async (conn, mek, baterai, blocked) => {
         }
 //=================================================//
         //buat fakereply
-        var ase = new Date();
-                var waktoonyabro = ase.getHours();
+                //var ase = new Date();
+                var waktoonyabro = moment.tz('Asia/Jakarta').format('HH') //ase.getHours();
                 switch(waktoonyabro){
                 case 0: waktoonyabro = `Selamat Malam ${pushname}🌛`; break;
                 case 1: waktoonyabro = `Selamat Malam ${pushname}🌛`; break;
