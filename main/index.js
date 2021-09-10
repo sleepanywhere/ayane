@@ -199,8 +199,8 @@ module.exports = conn = async (conn, mek, baterai, blocked) => {
         }
 //=================================================//
         //buat fakereply
-                var ase = new Date().toLocaleString("en-US", { timeZone: "Asia/Jayapura" });
-                var asu = new Date(chicago_datetime_str);
+                var ase = new Date().toLocaleString("en-US", { timeZone: "Asia/Jakarta" });
+                var asu = new Date(ase);
                 var waktoonyabro = asu.getHours();
                //var waktoonyabro = ase.getHours({timezone:'Asia/Jakarta'});
                 switch(waktoonyabro){
