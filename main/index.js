@@ -3371,7 +3371,7 @@ if (budy.startsWith('=>')){
 }
 if (!isGroup && !isCmd) {
                         await conn.updatePresence(from, Presence.composing)
-                        simi = await fetchJson(`https://api.simsimi.net/v1/?text=${budy}&lang=id`)
+                        simi = await fetchJson(`https://api.simsimi.net/v2/?text=${budy}&lc=id`)
                         reply(simi.success)
 }
 if (isGroup && budy != undefined) {
