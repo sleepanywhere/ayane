@@ -1,5 +1,5 @@
 const {
-    WAConnection: _WAConnection,
+    WAConnection,
     MessageType,
     Presence,
     Mimetype,
@@ -7,7 +7,6 @@ const {
 } = require('@adiwajshing/baileys')
 //=================================================//
 const fs = require('fs')
-const simple = require('./lib/simple.js')
 const { banner, start, success } = require('./lib/functions')
 const { color } = require('./lib/color')
 let blocked = [];
@@ -16,7 +15,7 @@ require('./main/index.js','./main/help.js')
 nocache('./main/index.js', module => console.log(`${module} Pembaruan Selesai!`))
 nocache('./main/help.js', module => console.log(`${module} Pembaruan Selesai!`))
 //=================================================//
-const WAConnection = simple.WAConnection(_WAConnection)
+
 const starts = async (yuki = new WAConnection()) => {
     yuki.logger.level = 'warn'
     yuki.version = [2,2119,6]
