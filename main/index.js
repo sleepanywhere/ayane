@@ -430,7 +430,7 @@ module.exports = conn = async (conn, mek, baterai, blocked) => {
             //message.message = mek.message.viewOnceMessage.message
             //message.message[Object.keys(message.message)[0]].viewOnce = false
             //conn.reply(from, 'ViewOnce detected!', mek).then(() => conn.forwardMessage(from, message))
-            }
+            //}
             // MUTE
             const isMuted = isGroup ? mute.includes(from) : false
             if (isMuted){
