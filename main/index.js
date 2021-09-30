@@ -1,5 +1,5 @@
 const {
-WAConnection: _WAConnection,
+WAConnection,
 MessageType,
 Presence,
 MessageOptions,
@@ -16,8 +16,6 @@ waChatKey,
 mentionedJid,
 processTime
 } = require("@adiwajshing/baileys")
-const simple = require('../lib/simple.js')
-const WAConnection = simple.WAConnection(_WAConnection)
 
 //=================================================//
 const imgbb = require('imgbb-uploader')
@@ -120,7 +118,6 @@ module.exports = conn = async (conn, mek, baterai, blocked) => {
         if (mek.key.fromMe) return
         if (mek.key && mek.key.remoteJid == 'status@broadcast') return
         global.blocked
-        m = simple.smsg(conn, mek)
         mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
         const content = JSON.stringify(mek.message)
         const from = mek.key.remoteJid
@@ -427,12 +424,12 @@ module.exports = conn = async (conn, mek, baterai, blocked) => {
             users.push(obj)
             fs.writeFileSync('./database/user.json', JSON.stringify(users))}
             //viewonce
-            if (m.isGroup && m.mtype == 'viewOnceMessage'){
-            if (m.fromMe) return
-            message = {...mek}
-            message.message = mek.message.viewOnceMessage.message
-            message.message[Object.keys(message.message)[0]].viewOnce = false
-            conn.reply(from, 'ViewOnce detected!', mek).then(() => conn.forwardMessage(from, message))
+            //if (m.isGroup && m.mtype == 'viewOnceMessage'){
+            //if (m.fromMe) return
+            //message = {...mek}
+            //message.message = mek.message.viewOnceMessage.message
+            //message.message[Object.keys(message.message)[0]].viewOnce = false
+            //conn.reply(from, 'ViewOnce detected!', mek).then(() => conn.forwardMessage(from, message))
             }
             // MUTE
             const isMuted = isGroup ? mute.includes(from) : false
